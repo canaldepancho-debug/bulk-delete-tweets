@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -12,29 +12,32 @@
     <header>
       <div class="logo">
         <svg viewBox="0 0 24 24" aria-hidden="true" class="x-icon"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"></path></svg>
-        <h1>Limpiador de Posts</h1>
+        <h1 data-i18n="title">Post Cleaner</h1>
       </div>
+      <button id="langToggle" class="lang-toggle" title="Switch language">
+        <span id="langLabel">ES</span>
+      </button>
     </header>
 
     <div class="main-content">
       <div class="mode-toggle">
-        <span id="modeLabel" class="mode-label active">Eliminar por condición</span>
+        <span id="modeLabel" class="mode-label active" data-i18n="modeCondition">Delete by condition</span>
         <label class="switch">
           <input type="checkbox" id="deleteAllToggle">
           <span class="slider round"></span>
         </label>
-        <span class="mode-label">Eliminar todo</span>
+        <span class="mode-label" data-i18n="modeAll">Delete all</span>
       </div>
 
       <div class="dry-run-wrapper">
         <label class="checkbox-container dry-run-label">
           <input type="checkbox" id="dryRunToggle" checked>
           <span class="checkmark"></span>
-          Simulación (Solo resaltar, no borrar)
+          <span data-i18n="dryRun">Dry Run (Highlight only, don't delete)</span>
         </label>
       </div>
 
-      <p class="section-title">Selecciona el tipo a eliminar</p>
+      <p class="section-title" data-i18n="selectType">Select type to delete</p>
       <div class="checkbox-group">
         <label class="checkbox-container">
           <input type="checkbox" id="typePosts" checked>
@@ -46,38 +49,40 @@
         </label>
         <label class="checkbox-container">
           <input type="checkbox" id="typeReplies">
-          <span class="checkmark"></span> Respuestas
+          <span class="checkmark"></span>
+          <span data-i18n="replies">Replies</span>
         </label>
-        <label class="checkbox-container" title="Unliking is partially supported. Requires you to be on the 'Likes' tab.">
+        <label class="checkbox-container" data-i18n-title="likesTooltip" title="Unliking is partially supported. Requires you to be on the 'Likes' tab.">
           <input type="checkbox" id="typeLikes">
-          <span class="checkmark"></span> Me gusta
+          <span class="checkmark"></span>
+          <span data-i18n="likes">Likes</span>
         </label>
       </div>
 
       <div class="input-group">
-        <label for="keywords" class="section-title">Palabras clave</label>
-        <input type="text" id="keywords" placeholder="Introduce palabras clave separadas por comas">
+        <label for="keywords" class="section-title" data-i18n="keywords">Keywords</label>
+        <input type="text" id="keywords" data-i18n-placeholder="keywordsPlaceholder" placeholder="Enter keywords separated by commas">
       </div>
 
       <div class="input-group">
-        <label for="limit" class="section-title">Límite a eliminar (Dejar vacío para ilimitado)</label>
-        <input type="number" id="limit" placeholder="Ej: 100" min="1" style="width: 100%; padding: 10px 12px; border: 1px solid var(--border-color); border-radius: 8px; font-family: inherit; font-size: 14px; background: var(--bg-color);">
+        <label for="limit" class="section-title" data-i18n="limit">Limit to delete (Leave empty for unlimited)</label>
+        <input type="number" id="limit" data-i18n-placeholder="limitPlaceholder" placeholder="E.g.: 100" min="1" style="width: 100%; padding: 10px 12px; border: 1px solid var(--border-color); border-radius: 8px; font-family: inherit; font-size: 14px; background: var(--bg-color);">
       </div>
 
       <div class="date-group">
         <div class="date-input">
-          <label for="dateFrom" class="section-title">Desde</label>
+          <label for="dateFrom" class="section-title" data-i18n="dateFrom">From</label>
           <input type="date" id="dateFrom">
         </div>
         <div class="date-input">
-          <label for="dateTo" class="section-title">Hasta</label>
+          <label for="dateTo" class="section-title" data-i18n="dateTo">To</label>
           <input type="date" id="dateTo">
         </div>
       </div>
 
       <div class="actions">
-        <button id="startBtn" class="btn primary">Iniciar Limpieza</button>
-        <button id="stopBtn" class="btn secondary" disabled>Detener</button>
+        <button id="startBtn" class="btn primary" data-i18n="startBtn">Start Cleaning</button>
+        <button id="stopBtn" class="btn secondary" disabled data-i18n="stopBtn">Stop</button>
       </div>
       
       <div id="status" class="status-message"></div>
