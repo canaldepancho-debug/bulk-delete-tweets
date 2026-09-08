@@ -104,5 +104,7 @@ Contributions are welcome! Feel free to open an issue or submit a pull request.
 ---
 
 <p align="center">
+  Made with ❤️ by <a href="https://github.com/canaldepancho"><b>canaldepancho</b></a>
+  <br><br>
   <b>If this tool helped you, consider giving it a ⭐ on GitHub!</b>
 </p>

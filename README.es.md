@@ -106,5 +106,7 @@ Este proyecto es de código abierto y está disponible bajo la [Licencia MIT](LI
 ---
 
 <p align="center">
+  Hecho con ❤️ por <a href="https://github.com/canaldepancho"><b>canaldepancho</b></a>
+  <br><br>
   <b>Si esta herramienta te ayudó, ¡considera darle una ⭐ en GitHub!</b>
 </p>
