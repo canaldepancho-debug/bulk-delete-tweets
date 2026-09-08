@@ -89,7 +89,7 @@ git clone https://github.com/canaldepancho-debug/bulk-delete-tweets.git
 
 ## 🌐 Soporte de Idiomas
 
-La interfaz de la extensión está en **español**, pero funciona tanto en la versión en inglés como en español de X.com. La detección de posts (reposts, respuestas) es compatible con ambos idiomas.
+La extensión soporta **inglés y español** de fábrica. Detecta automáticamente el idioma de tu navegador, y puedes cambiar entre idiomas en cualquier momento usando el **botón EN/ES** en la esquina superior derecha del popup.
 
 ---
 

@@ -87,7 +87,7 @@ git clone https://github.com/canaldepancho-debug/bulk-delete-tweets.git
 
 ## 🌐 Language Support
 
-The extension interface is in **Spanish**, but it works on both the English and Spanish versions of X.com. Post detection (reposts, replies) is language-aware.
+The extension supports **English and Spanish** out of the box. It automatically detects your browser language, and you can switch between languages anytime using the **EN/ES toggle** in the top-right corner of the popup.
 
 ---
 
